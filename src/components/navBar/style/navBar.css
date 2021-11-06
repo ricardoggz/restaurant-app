@@ -1,5 +1,6 @@
 header {
-  background: #1A1A1A;
+  width: 100%;
+  background: #1b1b1b;
   padding: 1rem 0;
 }
 
@@ -7,14 +8,59 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #FFF6E5;
 }
 
 .nav_bar_list li {
   display: inline-block;
-  padding: 0 0.5rem;
+  list-style: none;
+  padding: 0 0.8rem;
+}
+.nav_bar_list .link {
+  color: #fff;
+  text-decoration: none;
+}
+.nav_bar_list .link:hover {
+  text-decoration: underline;
+  transition: all 1000ms ease-in-out;
+}
+.nav_bar .bar-btn,
+input {
+  display: none;
 }
 
 .nav_bar_logo {
   width: 4%;
+}
+
+/*responsiver NavBar*/
+
+@media (min-width: 240px) and (max-width: 880px) {
+  .nav_bar_list {
+    display: none;
+    top: 4.05rem;
+    right: 0;
+    position: absolute;
+  }
+  .nav_bar_list li {
+    padding: 2.5rem 0.8rem;
+  }
+  .nav_bar .bar-btn {
+    font-size: 2rem;
+    color: #fff;
+    display: flex;
+    user-select: none;
+  }
+  .nav_bar_logo {
+    width: 10%;
+  }
+  .nav_bar #menu:checked ~ .nav_bar_list {
+    background: #1b1b1b;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align:justify;
+    justify-content: center;
+    align-items: center;
+  }
 }
