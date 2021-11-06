@@ -1,0 +1,20 @@
+header {
+  background: #1A1A1A;
+  padding: 1rem 0;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFF6E5;
+}
+
+.nav_bar_list li {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+.nav_bar_logo {
+  width: 4%;
+}
