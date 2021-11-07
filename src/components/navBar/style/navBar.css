@@ -9,7 +9,10 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
+.nav_bar .bar-btn,
+input {
+  display: none;
+}
 .nav_bar_list li {
   display: inline-block;
   list-style: none;
@@ -23,11 +26,6 @@ header {
   text-decoration: underline;
   transition: all 1000ms ease-in-out;
 }
-.nav_bar .bar-btn,
-input {
-  display: none;
-}
-
 .nav_bar_logo {
   width: 4%;
 }
@@ -35,6 +33,13 @@ input {
 /*responsiver NavBar*/
 
 @media (min-width: 240px) and (max-width: 880px) {
+  .nav_bar .bar-btn {
+    font-size: 2.5rem;
+    color: #fff;
+    display: flex;
+    user-select: none;
+  }
+
   .nav_bar_list {
     display: none;
     top: 4.6rem;
@@ -44,14 +49,9 @@ input {
   .nav_bar_list li {
     padding: 1.3rem 0.8rem;
   }
-  .nav_bar .bar-btn {
-    font-size: 2.5rem;
-    color: #fff;
-    display: flex;
-    user-select: none;
-  }
+
   .nav_bar_logo {
-    width: 10%;
+    width: 8%;
   }
   .nav_bar #menu:checked ~ .nav_bar_list {
     background: #1b1b1b;
@@ -59,7 +59,7 @@ input {
     height: 60vh;
     display: flex;
     flex-direction: column;
-    text-align:justify;
+    text-align: justify;
     justify-content: center;
   }
 }
