@@ -18,7 +18,7 @@ const NavBar = () => {
             <li><Link to="#" className="link">Inicio</Link></li>
             <li><Link to="#" className="link">Comidas</Link></li>
             <li><Link to="#" className="link">Blog</Link></li>
-            <li><Link to="#" className="link">Contacto</Link></li>
+            <li><Link to="#" className="link">Reserva</Link></li>
           </ul>
         </nav>
       </div>

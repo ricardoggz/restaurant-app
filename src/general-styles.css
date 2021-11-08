@@ -11,6 +11,12 @@
 body {
   font-family: "Montserrat", sans-serif;
   background: #eeeeee;
+  color:#1b1b1b;
+  line-height: 2rem;
+}
+
+h1,h2{
+  padding-bottom: 2rem;
 }
 
 /*clase general para contenedores*/

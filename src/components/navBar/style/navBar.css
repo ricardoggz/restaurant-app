@@ -9,8 +9,8 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.nav_bar .bar-btn,
-input {
+header .bar-btn,
+#menu {
   display: none;
 }
 .nav_bar_list li {
