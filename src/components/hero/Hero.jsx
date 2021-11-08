@@ -1,20 +1,23 @@
 import React from "react";
+import { Button } from "../button/Button";
+import { Link } from "react-router-dom";
 import "./style/hero.css";
-import dishimg from "./img/dish.jpg";
+import pizzadish from "./img/pizza-dish.jpg";
 
 function Hero() {
   return (
-    <section className="home_container">
+    <section className="hero_container">
       <div>
-        <img src={dishimg} alt="Un estómago vacío es un mal consejero" />
+        <figure>
+          <img src={pizzadish} alt="Un estómago vacío es un mal consejero" />
+        </figure>
       </div>
-      <div>
-        <span className="title_home">
-          En esta cocina pasan cosas mágicas...
-        </span>
-        <p className="subtitle_home">
-          "Goza inteligentemente de los placeres de la vida"
-        </p>
+      <div className="titles">
+        <span>En esta cocina pasan cosas mágicas...</span>
+        <p>"Goza inteligentemente de los placeres de la vida"</p>
+        <Link to="/">
+          <Button title="Ver comidas" />
+        </Link>
       </div>
     </section>
   );

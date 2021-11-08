@@ -16,7 +16,7 @@ body {
 /*clase general para contenedores*/
 
 .flex-container {
-  max-width: 80%;
+  max-width: 85%;
   margin: 0 auto;
 }
 
