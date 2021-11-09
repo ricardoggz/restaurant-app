@@ -1,0 +1,13 @@
+.food-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/*responsive*/
+
+@media (min-width:240px) and (max-width:880px){
+    .food-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
