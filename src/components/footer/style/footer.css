@@ -4,9 +4,6 @@ footer{
 footer ul li{
     list-style: none;
 }
-footer .contact-container, .copyright{
-    padding: 1rem 0;
-}
 .copyright{
     background: #1b1b1b;
     color:#fff;

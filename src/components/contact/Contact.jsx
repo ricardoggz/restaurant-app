@@ -4,9 +4,9 @@ import "./style/contact.css";
 
 function Contact() {
   return (
-    <section className="flex-container">
+    <section className="flex-container sections-container">
       <form className="form-container">
-        <h2>¿Alguna duda, comentario o sugerencia? Envíanos un mensaje...</h2>
+        <span>¿Alguna duda, comentario o sugerencia? Envíanos un mensaje...</span>
         <label>Tu nombre:</label>
         <input type="text" placeholder="nombre:" />
         <label>Tu correo:</label>

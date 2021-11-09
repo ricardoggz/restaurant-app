@@ -19,12 +19,18 @@ h1,h2{
   padding-bottom: 2rem;
 }
 
+
 /*clase general para contenedores*/
 
 .flex-container {
   max-width: 85%;
   margin: 0 auto;
 }
+
+.sections-container{
+  padding: 4rem 0;
+}
+
 
 /*clase general para contenedores - responsive*/
 

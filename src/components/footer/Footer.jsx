@@ -4,7 +4,7 @@ import "./style/footer.css";
 function Footer() {
   return (
     <footer>
-      <section className="flex-container contact-container">
+      <section className="flex-container sections-container">
         <span>Medios de contacto:</span>
         <ul>
           <li>Teléfono : +52 1 (55) 12 34 56 78</li>

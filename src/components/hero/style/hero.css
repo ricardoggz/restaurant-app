@@ -1,5 +1,4 @@
 .hero_container {
-  height: 90vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -8,13 +7,13 @@
 .hero_container img {
   width: 100%;
 }
-.hero_container> .titles{
+.hero_container > .titles {
   text-align: end;
 }
-.hero_container>.titles > span{
-  font-size:2rem;
+.hero_container > .titles > span {
+  font-size: 2rem;
 }
-.hero_container>.titles>p{
+.hero_container > .titles > p {
   font-size: 1.2rem;
   padding: 2rem 0;
 }
@@ -25,19 +24,8 @@
   .hero_container {
     grid-template-columns: repeat(1, 1fr);
     height: 100%;
-    padding: 5rem 0;
   }
-  .hero_container> .titles{
+  .hero_container > .titles {
     text-align: center;
-    padding: 2rem 0;
-  }
-
-  .hero_container>.titles> span{
-    font-size: 1.5rem;
-    padding:2rem 0;
-  }
-  .hero_container>.titles>p{
-    padding: 1rem 0;
-    font-size: 1rem;
   }
 }

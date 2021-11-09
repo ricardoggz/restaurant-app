@@ -4,7 +4,7 @@ import "./style/about.css";
 function About() {
   return (
     <section className="about-container">
-      <div className="flex-container">
+      <div className="flex-container sections-container">
         <h1>Conócenos...</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor

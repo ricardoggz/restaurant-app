@@ -6,7 +6,7 @@ import pizzadish from "./img/pizza-dish.jpg";
 
 function Hero() {
   return (
-    <section className="hero_container flex-container">
+    <section className="hero_container flex-container sections-container">
       <div>
         <figure>
           <img src={pizzadish} alt="Un estómago vacío es un mal consejero" />
