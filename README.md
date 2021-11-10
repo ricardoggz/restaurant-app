@@ -1,2 +1,3 @@
-#SPA (Single Page Application) hecha con React JS y CSS3.
-#Aplicacon para restaurante con secciones como : home, blog, comidas y reservaciones
+SPA (Single Page Application) hecha con React JS, CSS3 y la API de "JSON-placeholder" para dactos ficticios.
+Aplicacon para restaurante con secciones como : home, blog, comidas y reservaciones.
+
