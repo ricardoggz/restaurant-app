@@ -23,7 +23,7 @@ const NavBar = () => {
           </label>
           <ul className="nav_bar_list">
             <li><Link to="/" className="link">Inicio</Link></li>
-            <li><Link to="/dishes" className="link">Comidas</Link></li>
+            <li><Link to="/fooddishes" className="link">Comidas</Link></li>
             <li><Link to="/blog" className="link">Blog</Link></li>
             <li><Link to="#" className="link">Reserva</Link></li>
           </ul>
@@ -35,7 +35,7 @@ const NavBar = () => {
     </Routes>
 
     <Routes>
-      <Route exact path="/dishes" element={<FoodDishes/>}/>
+      <Route exact path="/fooddishes" element={<FoodDishes/>}/>
     </Routes>
 
     <Routes>

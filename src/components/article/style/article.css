@@ -1,0 +1,15 @@
+.articles-container ul li{
+    list-style: none;
+}
+.imgarticle {
+    width: 20%;
+    border-radius: 50%;
+}
+
+/*responsive*/
+
+@media (min-width:240px) and (max-width:880px){
+    .imgarticle{
+        width: 100%;
+    }
+}
