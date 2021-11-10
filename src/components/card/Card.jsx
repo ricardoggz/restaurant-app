@@ -1,6 +1,8 @@
 import React from "react";
 import "./style/card.css";
 
+import {Button } from "../button/Button";
+
 class Card extends React.Component {
   render() {
     return (
@@ -13,6 +15,7 @@ class Card extends React.Component {
           <li>{this.props.ingredients}</li>
           <li>{this.props.price}</li>
         </ul>
+        <Button title="Ordenar" />
       </div>
     );
   }

@@ -8,6 +8,7 @@ import logo from "./img/Logo.png";
 
 import { Home } from "../../scenes/home/Home";
 import {FoodDishes} from "../../scenes/foodDishes/FoodDishes";
+import { Blog } from "../../scenes/blog/Blog";
 
 const NavBar = () => {
   return (
@@ -23,7 +24,7 @@ const NavBar = () => {
           <ul className="nav_bar_list">
             <li><Link to="/" className="link">Inicio</Link></li>
             <li><Link to="/dishes" className="link">Comidas</Link></li>
-            <li><Link to="#" className="link">Blog</Link></li>
+            <li><Link to="/blog" className="link">Blog</Link></li>
             <li><Link to="#" className="link">Reserva</Link></li>
           </ul>
         </nav>
@@ -35,6 +36,10 @@ const NavBar = () => {
 
     <Routes>
       <Route exact path="/dishes" element={<FoodDishes/>}/>
+    </Routes>
+
+    <Routes>
+      <Route exact path="/blog" element={<Blog />}/>
     </Routes>
     </Router>
   );

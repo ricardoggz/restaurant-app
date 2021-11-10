@@ -29,7 +29,7 @@ function FoodDishes() {
 
         <Card
           name="Baguette"
-          ingredients="Peperoni, queso, pan, lechuga y verduras"
+          ingredients="Peperoni, queso, pan, lechuga, verduras y aderezo"
           price="$120 mxn"
           image={baguetteimg}
         />
