@@ -15,7 +15,7 @@ function Hero() {
       <div className="titles">
         <span>En esta cocina pasan cosas mágicas...</span>
         <p>"Goza inteligentemente de los placeres de la vida"</p>
-        <Link to="/dishes">
+        <Link to="/fooddishes">
           <Button title="Ver comidas" />
         </Link>
       </div>

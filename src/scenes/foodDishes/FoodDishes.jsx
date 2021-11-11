@@ -12,7 +12,7 @@ function FoodDishes() {
   return (
     <section className="flex-container sections-container">
       <h1>Nuestro menú de comidas</h1>
-      <div className="food-container sections-container">
+      <div className="food-container">
         <Card
           name="Pizza"
           ingredients="Peperoni, queso, salsa de tomate, orilla rellena"
