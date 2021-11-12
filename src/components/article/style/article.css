@@ -1,15 +1,19 @@
-.articles-container ul li{
+.card-article ul li{
     list-style: none;
 }
-.imgarticle {
-    width: 20%;
-    border-radius: 50%;
+
+.card-article .imgarticle{
+    margin: 0 auto;
+    width: 80%;
+}
+.card-article .imgarticle img{
+    width: 100%;
 }
 
 /*responsive*/
 
 @media (min-width:240px) and (max-width:880px){
-    .imgarticle{
+    .card-article .imgarticle{
         width: 100%;
     }
 }

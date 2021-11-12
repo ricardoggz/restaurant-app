@@ -28,10 +28,6 @@
   background:rgba(0, 0, 0, 0.575);
   color:#eeeeee;
 }
-.titles button{
-  width: 100%;
-}
-
 /*responsive*/
 
 @media (min-width: 240px) and (max-width: 880px) {
