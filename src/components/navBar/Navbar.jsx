@@ -9,6 +9,7 @@ import logo from "./img/Logo.png";
 import { Home } from "../../scenes/home/Home";
 import {FoodDishes} from "../../scenes/foodDishes/FoodDishes";
 import { Blog } from "../../scenes/blog/Blog";
+import {Reservation} from "../../scenes/reservation/Reservation";
 
 const NavBar = () => {
   return (
@@ -25,7 +26,7 @@ const NavBar = () => {
             <li><Link to="/" className="link">Inicio</Link></li>
             <li><Link to="/fooddishes" className="link">Comidas</Link></li>
             <li><Link to="/blog" className="link">Blog</Link></li>
-            <li><Link to="#" className="link">Reserva</Link></li>
+            <li><Link to="/reservation" className="link">Reserva</Link></li>
           </ul>
         </nav>
       </div>
@@ -40,6 +41,10 @@ const NavBar = () => {
 
     <Routes>
       <Route exact path="/blog" element={<Blog />}/>
+    </Routes>
+
+    <Routes>
+      <Route exact path="/reservation" element={<Reservation />}/>
     </Routes>
     </Router>
   );
