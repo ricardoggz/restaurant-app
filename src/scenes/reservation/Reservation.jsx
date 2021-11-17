@@ -4,6 +4,10 @@ import db from "../../firebase/firebaseConfig";
 import "./style/reservation.css";
 import illustration from "./img/illustration-reservation.png";
 
+/*components*/
+
+import { Button } from "../../components/button/Button";
+
 function Reservation() {
   useEffect(() => {
     const getUsers = async () => {
@@ -20,10 +24,13 @@ function Reservation() {
         <form className="reservation-form">
           <label>Tu nombre:</label>
           <input type="text" placeholder="Ingresa tu nombre" required />
-          <label>Fecha de reservación:</label>
+          <label>Fecha de registro:</label>
           <input type="date" required />
-          <label>Número estimado de personas:</label>
+          <label>Fecha estimada:</label>
+          <input type="date" required />
+          <label>Número de personas:</label>
           <input type="number" required />
+          <Button title="Reservar" />
         </form>
       </div>
     </section>
