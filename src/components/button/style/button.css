@@ -8,11 +8,3 @@ button{
     border-radius:5px;
     font-size:1.2rem;
 }
-
-/*responsive*/
-
-@media (min-width: 240px) and (max-width:880px){
-    button{
-        width: 100%;
-    }
-}

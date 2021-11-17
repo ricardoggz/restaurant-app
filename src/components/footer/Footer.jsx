@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
       <section className="flex-container sections-container">
-        <span>Medios de contacto:</span>
+        <span>Contacto directo:</span>
         <ul>
           <li>Teléfono : +52 1 (55) 12 34 56 78</li>
           <li>Correo: correo@correo.com.mx</li>
