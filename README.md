@@ -1,2 +1,2 @@
-Single Page Application  hecha con React JS, CSS3 y la API de "JSON-placeholder" para dactos ficticios.
-Aplicacon para restaurante con secciones como : home, blog, comidas y reservaciones.
+Single Page Aplication creada con React JS, CSS y react icons
+SPA de un restaurante con sistema de reservas y un blog donde se muestran datos de la API "JSON placeholder"
