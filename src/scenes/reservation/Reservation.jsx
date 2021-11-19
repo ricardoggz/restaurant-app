@@ -1,29 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 /*firebase*/
-import { collection, getDocs } from "firebase/firestore";
+import { collection, addDoc } from "firebase/firestore";
 import db from "../../firebase/firebaseConfig";
 
 /*img & styles*/
 import "./style/reservation.css";
 import illustration from "./img/illustration-reservation.png";
+import Swal from "sweetalert2";
 
 /*components*/
 import { Button } from "../../components/button/Button";
+import { ButtonDanger } from "../../components/button/ButtonDanger";
 
 function Reservation() {
-  {
-    /*useEffect(() => {
-    const getUsers = async () => {
-      const showUsers = await getDocs(collection(db, "users"));
-      console.log(showUsers.docs[0].data().name);
-      console.log(showUsers.docs[0].data().lastname)
-    };
-    getUsers();
-  }, []);*/
-  }
-
-  /*Evaluar datos del formulario*/
+  /*Validar datos del formulario y mandarlos a firebase*/
 
   const valueForm = {
     name: "",
@@ -39,17 +30,17 @@ function Reservation() {
     setValues({ ...values, [name]: value });
   };
 
-  const saveData = (e) => {
+  const saveData = async (e) => {
     e.preventDefault();
+    await addDoc(collection(db, "reservations"), { values });
     console.log(values);
+    Swal.fire(
+      "Reservación exitosa " +
+        `${values.name}` +
+        " te esperamos el día " +
+        `${values.secondDate}`
+    );
   };
-
-  /*Mandar datos a Firebase*/
-
-  const sendData = async (inputData) =>{
-    await db.collection('reservations').doc().set(inputData);
-    console.log('Reservacion añadida')
-  }
 
   return (
     <section className="flex-container sections-container">
@@ -77,6 +68,7 @@ function Reservation() {
             required
           />
           <Button title="Reservar" />
+          <ButtonDanger title="Cancelar" />
         </form>
       </div>
     </section>

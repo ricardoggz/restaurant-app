@@ -1,4 +1,4 @@
-button{
+.button__submit{
     width:100%;
     padding:0.5rem  1rem;
     cursor: pointer;
@@ -7,4 +7,15 @@ button{
     color:#eeeeee;
     border-radius:5px;
     font-size:1.2rem;
+}
+.button__danger{
+    background: #e74c3c;
+    width:100%;
+    padding:0.5rem  1rem;
+    cursor: pointer;
+    border:solid #00000049;
+    color:#eeeeee;
+    border-radius:5px;
+    font-size:1.2rem;
+    margin-top: 1rem;
 }
