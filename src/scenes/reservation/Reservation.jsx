@@ -23,6 +23,8 @@ function Reservation() {
   }, []);*/
   }
 
+  /*Evaluar datos del formulario*/
+
   const valueForm = {
     name: "",
     firstDate: "",
@@ -41,6 +43,13 @@ function Reservation() {
     e.preventDefault();
     console.log(values);
   };
+
+  /*Mandar datos a Firebase*/
+
+  const sendData = async (inputData) =>{
+    await db.collection('reservations').doc().set(inputData);
+    console.log('Reservacion añadida')
+  }
 
   return (
     <section className="flex-container sections-container">
